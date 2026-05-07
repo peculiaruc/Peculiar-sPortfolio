@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+export default function Nav({ theme, setTheme }) {
+    return (_jsx(motion.nav, { initial: { y: -20, opacity: 0 }, animate: { y: 0, opacity: 1 }, transition: { duration: 0.35 }, className: "sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800", children: _jsxs("div", { className: "container section-py-4 flex items-center justify-between", children: [_jsx(Link, { to: "/", className: "font-bold text-lg", children: "PECULIAR C UMEH" }), _jsxs("div", { className: "flex items-center gap-4", children: [_jsx(Link, { to: "/", className: "hidden md:inline", children: "Home" }), _jsx(Link, { to: "/about", className: "hidden md:inline", children: "About" }), _jsx(Link, { to: "/projects", className: "hidden md:inline", children: "Work" }), _jsx(Link, { to: "/mediakit", className: "hidden md:inline", children: "Media Kit" }), _jsx(Link, { to: "/contact", className: "hidden md:inline", children: "Contact" }), _jsx("button", { "aria-label": "Toggle theme", onClick: () => setTheme(theme === 'dark' ? 'light' : 'dark'), className: "p-2 rounded-md ring-1 ring-gray-200 dark:ring-gray-700", children: theme === 'dark' ? '🌙' : '☀️' })] })] }) }));
+}
