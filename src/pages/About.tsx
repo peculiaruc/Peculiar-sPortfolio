@@ -10,12 +10,12 @@ import androidImg from "@/assets/android-1.png";
 import mentoringImg from "@/assets/mentoring.png";
 
 const skills = [
-  { name: "JavaScript/TypeScript", level: 90 },
-  { name: "Android/Kotlin", level: 85 },
-  { name: "React/React Native", level: 85 },
-  { name: "Python", level: 75 },
-  { name: "Project Management", level: 90 },
-  { name: "Community Building", level: 95 },
+  { name: "JavaScript/TypeScript", level: 50 },
+  { name: "Android/Kotlin", level: 90 },
+  { name: "React/React Native", level: 55 },
+  { name: "Python", level: 20 },
+  { name: "Project Management", level: 100 },
+  { name: "Community Building", level: 100 },
 ];
 
 const experiences = [
